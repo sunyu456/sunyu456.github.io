@@ -1,1 +1,135 @@
-HelloWorld
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style01.css">
+    <script>
+        window.onload = function() {
+            var i = 0;
+            var per = document.getElementById("per");
+            var next = document.getElementById("next");
+            var img = document.getElementsByTagName("img")[0];
+            var imgArr = ["https://tse1-mm.cn.bing.net/th/id/R-C.a9fa19d547fab3da26bbbf82813a63d0?rik=PGnzzi2lmSU27A&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fbdb613016af8a74c9647f13ab371ad61c6b92b20.jpg&ehk=JwqhNH30LO3am%2bjWQSwiQ16YvLoGFLZAncC2W2aU52g%3d&risl=&pid=ImgRaw&r=0",
+                "https://tse2-mm.cn.bing.net/th/id/OIP-C.yVaWnrYIXRsGHRGzqyBBWQHaEo?w=267&h=180&c=7&r=0&o=5&pid=1.7",
+                "https://tse3-mm.cn.bing.net/th/id/OIP-C.ai97zY1rVpsSG-WrsOv2QQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7",
+                "https://tse4-mm.cn.bing.net/th/id/OIP-C.dnaJ7etgDpkBOISpzeyghgHaEo?w=283&h=180&c=7&r=0&o=5&pid=1.7",
+                "https://tse2-mm.cn.bing.net/th/id/OIP-C.FFMFatllLTLquODwcKtgBAHaEo?w=292&h=182&c=7&r=0&o=5&pid=1.7"
+            ];
+            per.onclick = function() {
+                if (i <= 0) {
+                    i = i + 5;
+                }
+                i--
+                img.src = imgArr[i % 5];
+            };
+            next.onclick = function() {
+                i++;
+                img.src = imgArr[i % 5];
+            };
+            /*var box1 = document.getElementById("outer");
+            document.onmousemove = function(event) {
+                var leff = event.pageX;
+                var top = event.pageY;
+                box1.style.left = leff + "px";
+                box1.style.top = top + "px";
+            };*/
+            setInterval(function() {
+                i++;
+                img.src = imgArr[i % 5];
+            }, 5000)
+        };
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <h1>
+                    <a href="#">
+                        Twilight City
+                    </a>
+                </h1>
+                <Ul>
+                    <li><a href="#" class="courent">首页</a></li>
+                    <li>
+                        <a href="#">服务器介绍</a>
+                    </li>
+                    <li>
+                        <a href="#">制作人员</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li><a href="#">加入我们</a></li>
+                </Ul>
+            </div>
+        </nav>
+    </header>
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
+                <h1>加入我们&nbsp;&nbsp;&nbsp; <span class="text-primary">创造想象中的世界</span>
+                </h1>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+
+                </p>
+                <p>
+                    <span class="text-plus">暮光服务器 欢迎热爱minecraft的你
+                </p>
+                <a href="https://www.mcbbs.net/thread-719579-1-1.html" class="btm">点击下载服务端</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="wo1">
+    <div class="wo1-left">
+        <h3>关于服务器</h3>
+        <h2>欢迎加入暮光服务器</h2>
+        <h3>
+            我们是暮光服务器，旗下有钻石大陆，原版生存，mod生存，海岛世界生存，以及小游戏服务器，玩法多样，多种选择，可以在这里体验到原汁原味的mc快感，还在等什么，快点来玩吧!
+        </h3>
+    </div>
+    <div class="wo1-right">
+        <h2> 玩家建筑展示</h2>
+        <div class="outer1">
+            <img src="https://tse1-mm.cn.bing.net/th/id/R-C.a9fa19d547fab3da26bbbf82813a63d0?rik=PGnzzi2lmSU27A&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fbdb613016af8a74c9647f13ab371ad61c6b92b20.jpg&ehk=JwqhNH30LO3am%2bjWQSwiQ16YvLoGFLZAncC2W2aU52g%3d&risl=&pid=ImgRaw&r=0" />
+            <p>
+    
+            </p>
+            <button id="per">
+         </button>
+            <button id="next">
+            </button>
+    
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
