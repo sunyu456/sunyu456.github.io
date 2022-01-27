@@ -68,7 +68,7 @@ p {
 }
 
 #navbar ul li a:hover {
-    background: #333;
+    background: #fff;
     color: #f7c078;
 }
 
@@ -108,5 +108,5 @@ p {
 }
 
 .btm:hover {
-    background: #f7c078;
+    background-color: #f7c078;
 }
