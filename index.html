@@ -2,210 +2,787 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style01.css">
-    <script>
-        window.onload = function() {
-            var i = 0;
-            //var per = document.getElementById("per");
-            //var next = document.getElementById("next");
-            var img = document.getElementsByTagName("img")[0];
-            var imgArr = ["https://tse1-mm.cn.bing.net/th/id/R-C.a9fa19d547fab3da26bbbf82813a63d0?rik=PGnzzi2lmSU27A&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fbdb613016af8a74c9647f13ab371ad61c6b92b20.jpg&ehk=JwqhNH30LO3am%2bjWQSwiQ16YvLoGFLZAncC2W2aU52g%3d&risl=&pid=ImgRaw&r=0",
-                "https://tse2-mm.cn.bing.net/th/id/OIP-C.yVaWnrYIXRsGHRGzqyBBWQHaEo?w=267&h=180&c=7&r=0&o=5&pid=1.7",
-                "https://tse3-mm.cn.bing.net/th/id/OIP-C.ai97zY1rVpsSG-WrsOv2QQHaEK?w=306&h=180&c=7&r=0&o=5&pid=1.7",
-                "https://tse4-mm.cn.bing.net/th/id/OIP-C.dnaJ7etgDpkBOISpzeyghgHaEo?w=283&h=180&c=7&r=0&o=5&pid=1.7",
-                "https://tse2-mm.cn.bing.net/th/id/OIP-C.FFMFatllLTLquODwcKtgBAHaEo?w=292&h=182&c=7&r=0&o=5&pid=1.7"
-            ];
-            /*per.onclick = function() {
-                if (i <= 0) {
-                    i = i + 5;
-                }
-                i--
-                img.src = imgArr[i % 5];
-            };
-            next.onclick = function() {
-                i++;
-                img.src = imgArr[i % 5];
-            };
-            /*var box1 = document.getElementById("outer");
-            document.onmousemove = function(event) {
-                var leff = event.pageX;
-                var top = event.pageY;
-                box1.style.left = leff + "px";
-                box1.style.top = top + "px";
-            };*/
-            setInterval(function() {
-                i++;
-                img.src = imgArr[i % 5];
-            }, 5000)
-        };
-    </script>
-    <title>Document</title>
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>Breez Corporate Bootstrap Responsive Web Template</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
 </head>
 
-<body>
-    <header>
-        <nav id="navbar">
+<body id="home">
+
+    <header id="header">
+        <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
             <div class="container">
-                <h1>
-                    <a href="#">
-                        Twilight City
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <h1>Twilight City</h1>
                     </a>
-                </h1>
-                <Ul>
-                    <li><a href="#" class="courent">首页</a></li>
-                    <li>
-                        <a href="#">服务器介绍</a>
-                    </li>
-                    <li>
-                        <a href="#">制作人员</a>
-                    </li>
-                    <li>
-                        <a href="#">联系方式</a>
-                    </li>
-                    <li><a href="#">加入我们</a></li>
-                </Ul>
-            </div>
-        </nav>
-    </header>
-    <div id="showcase">
-        <div class="container">
-            <div class="showcase-content">
-                <h1>加入我们&nbsp;&nbsp;&nbsp; <span class="text-primary">创造想象中的世界</span>
-                </h1>
-                <p>
+                </div>
 
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-
-                </p>
-                <p>
-                    <span class="text-plus">暮光服务器 欢迎热爱minecraft的你
-                </p>
-                <a href="https://www.mcbbs.net/thread-719579-1-1.html" class="btm">点击下载服务端</a>
-            </div>
-        </div>
-
-    </div>
-    <div class="wo1">
-    <div class="wo1-left">
-        <h3>关于服务器</h3>
-        <h2>欢迎加入暮光服务器</h2>
-        <h3>
-            我们是暮光服务器，旗下有钻石大陆，原版生存，mod生存，海岛世界生存，以及小游戏服务器，玩法多样，多种选择，可以在这里体验到原汁原味的mc快感，还在等什么，快点来玩吧!
-        </h3>
-    </div>
-    <div class="wo1-right">
-        <h2> 玩家建筑展示</h2>
-        <div class="outer1">
-            <img src="https://tse1-mm.cn.bing.net/th/id/R-C.a9fa19d547fab3da26bbbf82813a63d0?rik=PGnzzi2lmSU27A&riu=http%3a%2f%2fi0.hdslb.com%2fbfs%2farchive%2fbdb613016af8a74c9647f13ab371ad61c6b92b20.jpg&ehk=JwqhNH30LO3am%2bjWQSwiQ16YvLoGFLZAncC2W2aU52g%3d&risl=&pid=ImgRaw&r=0" />
-            <p>
-    
-            </p>
-           <!-- <button id="per">
-         </button>
-            <button id="next">
-            </button>
-        -->    
-        </div>
-    </div>
-    </div>
-    <div class="wo2">
-        <ul>
-            <li style="background-color:#00FFFF; width: 20%;" class="word">
-                <h2>服务器运行时长(天)</h2>
-                <h4 style="color: coral; font-size: 40px; text-align: center; margin-top: 20px;">60+</h4>
-            </li>
-            <li style="background-color: #87CEEB; width: 20%;" class="word">
-                 <h2>服务器建设人数</h2>
-                 <h4 style="color: coral; font-size: 40px; text-align: center; margin-top: 20px;">30+</h4>
-            </li>
-            <li style="background-color: #00BFFF; width: 20%;" class="word">
-                  <h2>运行中的服务器</h2>
-                  <h4 style="color: coral; font-size: 40px; text-align: center; margin-top: 20px;">5</h4>
-            </li>
-            <li style="background-color: #ADD8E6; width: 20%;" class="word">
-                <h2>正在建设的服务器</h2>
-                <h4 style="color: coral; font-size: 40px; text-align: center; margin-top: 20px;">1</h4>
-            </li>
-            <li style="background-color: #B0E0E6; width: 20% ;" class="word">
-                <h2>服务器累计游玩人数</h2>
-                <h4 style="color: coral; font-size: 40px; text-align: center; margin-top: 20px;">300+</h4>
-            </li>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">主页</a></li>
+                        <li class="scroll"><a href="#features">关于服务器</a></li>
+                        <li class="scroll"><a href="#services">我们的服务</a></li>
+                        <li class="scroll"><a href="#portfolio">服务器展示</a></li>
+                        <li class="scroll"><a href="#our-team">开发团队</a></li>
+                        <li class="scroll"><a href="#pricing">支持我们</a></li>
+                        <li class="scroll"><a href="#contact-us">联系我们                                </a></li>
                     </ul>
+                </div>
             </div>
-<div class="wo3">
-    <div class="top1">
-        <h2>服务器列表</h2>
-        <h3>SERVER LIST</h3>
-    </div>   
-    <ul>
-        <li>
-            <div class="image1">
-            </div>
-            <a href="#">公益生存服</a>
-        </li>
-        <li>
-            <div class="image2">
-                
-            </div>
-            <a href="#">公益极限服</a>
-        </li>
-        <li>
-            <div class="image3">
-               
-            </div>
-            <a href="#">公益创造服</a>
-        </li>
-        <li>
-            <div class="image4">
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
 
-            </div>
-            <a href="#">公益RPG服</a>
-        </li>
-        <li>
-            <div class="image5">
+    <section id="hero-banner">
+        <div class="banner-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
 
+                        <h2>让我们&nbsp; 创造想象中的世界</h2>
+                        <p style="font-size: 25px;padding-top: 50px; ">暮光服务器欢迎热爱Minecraft的你</p>
+                        <a class="btn btn-primary btn-lg" href="#">Read More</a>
+
+                    </div>
+                </div>
             </div>
-            <a href="#">公益小游戏服</a>
-        </li>
-    </ul>
-</div>
-<div class="wo4">
-  <h4>
-      我们的特色
-  </h4>
-  <h5>
-     CORE FEATURES 
-  </h5>
-  <ul>
-      <li>专业的开发团队</li>
-      <li>一流的优化水平</li>
-      <li>独特的游戏玩法</li>
-      <li>超强主机</li>
-      <li>超级流畅</li>
-  </ul>
-</div>
+        </div>
+    </section>
+    <!--/#main-slider-->
+
+    <section id="hero-text" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>立刻加入我们</h2>
+                    <p>这里是填充文字qwq
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <a class="btn btn-primary btn-lg" href="#">立刻进入</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#hero-text-->
+
+    <section id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">我们的优势</h2>
+                <p class="text-center wow fadeInDown">更好的服务器带来更好的体验</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-rss"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">更高的带宽</h4>
+                            <p>这里是填充文字qwq</p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-cogs"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">更高效的服务器</h4>
+                            <p>这里是填充文字qwq</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-line-chart"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">更好的用户体验</h4>
+                            <p>这里是填充文字qwq </p>
+                        </div>
+                    </div>
+
+                    <div class="media service-box wow fadeInRight">
+                        <div class="pull-left">
+                            <i class="fa fa-cloud-upload"></i>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">更好的更新</h4>
+                            <p>这里是填充文字qwq</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">关于我们</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeft">
+                    <img class="img-responsive" src="images/about.png" alt="">
+                </div>
+
+                <div class="col-sm-6 wow fadeInRight">
+                    <h3 class="column-title">服务器发展历史</h3>
+                    <p>这里是填充文字</p>
+
+                    <p>这里是填充文字 </p>
+
+                    <p>这里是填充文字</p>
+
+
+                    <a class="btn btn-primary" href="#">Learn More</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#about-->
+
+    <section id="services">
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">我们的服务</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+            <div class="row">
+                <div class="features">
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-futbol-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字</h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-compass"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字 </h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-database"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字</h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bar-chart"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字</h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-paper-plane-o"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字</h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+
+                    <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
+                        <div class="media service-box">
+                            <div class="pull-left">
+                                <i class="fa fa-bullseye"></i>
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">这里是填充文字</h4>
+                                <p>这里是填充文字</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.col-md-4-->
+                </div>
+            </div>
+            <!--/.row-->
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#services-->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">玩家建筑展示</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+            <div class="text-center">
+                <ul class="portfolio-filter">
+                    <li><a class="active" href="#" data-filter="*">这里是填充文字</a></li>
+                    <li><a href="#" data-filter=".designing">这里是填充文字</a></li>
+                    <li><a href="#" data-filter=".mobile">这里是填充文字</a></li>
+                    <li><a href="#" data-filter=".development">这里是填充文字</a></li>
+                </ul>
+                <!--/#portfolio-filter-->
+            </div>
+
+            <div class="portfolio-items">
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.qfoZ1Uf6s9omu7-CgTpj0AHaEo?w=271&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse2-mm.cn.bing.net/th/id/OIP-C.qfoZ1Uf6s9omu7-CgTpj0AHaEo?w=271&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.0f4cb0qK6vVrgZpHVl-aewHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse3-mm.cn.bing.net/th/id/OIP-C.0f4cb0qK6vVrgZpHVl-aewHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse4-mm.cn.bing.net/th/id/OIP-C.s5mE2i5prhKcblZojY-u2gHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse4-mm.cn.bing.net/th/id/OIP-C.s5mE2i5prhKcblZojY-u2gHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse1-mm.cn.bing.net/th/id/OIP-C.cFL15f0PHWikobUNxbqB4AHaEn?w=276&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse1-mm.cn.bing.net/th/id/OIP-C.cFL15f0PHWikobUNxbqB4AHaEn?w=276&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.Z7GASpyFjFCTp1roQedpDwHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse2-mm.cn.bing.net/th/id/OIP-C.Z7GASpyFjFCTp1roQedpDwHaD7?w=320&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse4-mm.cn.bing.net/th/id/OIP-C.pacUIFgoWu0Tq2zFaUvTHwHaEo?w=263&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse4-mm.cn.bing.net/th/id/OIP-C.pacUIFgoWu0Tq2zFaUvTHwHaEo?w=263&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item designing development">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.X-VmyNVhvTJetts67T9JGAHaDt?w=309&h=174&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse3-mm.cn.bing.net/th/id/OIP-C.X-VmyNVhvTJetts67T9JGAHaDt?w=309&h=174&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+
+                <div class="portfolio-item mobile">
+                    <div class="portfolio-item-inner">
+                        <img class="img-responsive" src="https://tse3-mm.cn.bing.net/th/id/OIP-C.fZqGwiBljFCbLw7XF4TlfwHaD7?w=304&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        <div class="portfolio-info">
+                            <h3>Project Name</h3>
+                            Some description..
+                            <a class="preview" href="https://tse3-mm.cn.bing.net/th/id/OIP-C.fZqGwiBljFCbLw7XF4TlfwHaD7?w=304&h=180&c=7&r=0&o=5&pid=1.7" rel="prettyPhoto"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!--/.portfolio-item-->
+            </div>
+        </div>
+        <!--/.container-->
+    </section>
+    <!--/#portfolio-->
+
+
+
+    <section id="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">开发团队</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="https://tse1-mm.cn.bing.net/th/id/OIP-C.cdMJ13ihXr58c3xc03BFKADSEp?w=115&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>这里是填充文字</h3>
+                            <span>这里是填充文字</span>
+                            <p>这里是填充文字</p>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="data:image/jpeg;base64,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"
+                                alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>这里是填充文字</h3>
+                            <span>这里是填充文字</span>
+                            <p>这里是填充文字</p>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="https://tse2-mm.cn.bing.net/th/id/OIP-C.arLxAzq9Ys8duI4rHjHM1gHaNK?w=115&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>这里是填充文字</h3>
+                            <span>这里是填充文字</span>
+                            <p>这里是填充文字</p>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="team-member wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="team-img">
+                            <img class="img-responsive" src="https://tse4-mm.cn.bing.net/th/id/OIP-C.uEmsZNOPE4_3crFZdApDxQHaNK?w=115&h=192&c=7&r=0&o=5&pid=1.7" alt="">
+                        </div>
+                        <div class="team-info">
+                            <h3>这里是填充文字</h3>
+                            <span>这里是填充文字</span>
+                            <p>这里是填充文字</p>
+                        </div>
+                        <ul class="social-icons">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--/#our-team-->
+
+    <section id="business-stats">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">更好的发展</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <div class="business-stats" data-digit="365" data-duration="1000"></div>
+                        <strong>服务器运行时长（天）</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="100ms">
+                        <div class="business-stats" data-digit="7265" data-duration="1000"></div>
+                        <strong>服务器游玩人数</strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <div class="business-stats" data-digit="5" data-duration="1000"></div>
+                        <strong>运行中服务器
+                        </strong>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow fadeInUp" data-wow-duration="400ms" data-wow-delay="300ms">
+                        <div class="business-stats" data-digit="1" data-duration="1000"></div>
+                        <strong>建造中服务器</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#business-stats-->
+
+    <section id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">支持我们</h2>
+                <p class="text-center wow fadeInDown">这里是填充文字</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="0ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        10r
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Basic
+                                </div>
+                            </li>
+                            <li><strong>1</strong> 这里是填充文字</li>
+                            <li><strong>2</strong>这里是填充文字</li>
+                            <li><strong>3</strong> 这里是填充文字</li>
+                            <li><strong>4</strong>这里是填充文字</li>
+                            <li><strong>5</strong>这里是填充文字</li>
+                            <li><strong>6</strong>这里是填充文字</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="200ms">
+                        <ul class="pricing featured">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        20r
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Business
+                                </div>
+                            </li>
+                            <li><strong>1</strong> 这里是填充文字</li>
+                            <li><strong>2</strong>这里是填充文字</li>
+                            <li><strong>3</strong> 这里是填充文字</li>
+                            <li><strong>4</strong>这里是填充文字</li>
+                            <li><strong>5</strong>这里是填充文字</li>
+                            <li><strong>6</strong>这里是填充文字</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="400ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        40r
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Professional
+                                </div>
+                            </li>
+                            <li><strong>1</strong> 这里是填充文字</li>
+                            <li><strong>2</strong>这里是填充文字</li>
+                            <li><strong>3</strong> 这里是填充文字</li>
+                            <li><strong>4</strong>这里是填充文字</li>
+                            <li><strong>5</strong>这里是填充文字</li>
+                            <li><strong>6</strong>这里是填充文字</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="wow zoomIn" data-wow-duration="400ms" data-wow-delay="600ms">
+                        <ul class="pricing">
+                            <li class="plan-header">
+                                <div class="price-duration">
+                                    <span class="price">
+                                        100r
+                                    </span>
+                                    <span class="duration">
+                                        per month
+                                    </span>
+                                </div>
+
+                                <div class="plan-name">
+                                    Extended
+                                </div>
+                            </li>
+                            <li><strong>1</strong> 这里是填充文字</li>
+                            <li><strong>2</strong>这里是填充文字</li>
+                            <li><strong>3</strong> 这里是填充文字</li>
+                            <li><strong>4</strong>这里是填充文字</li>
+                            <li><strong>5</strong>这里是填充文字</li>
+                            <li><strong>6</strong>这里是填充文字</li>
+                            <li class="plan-purchase"><a class="btn btn-primary" href="#">Get It Now!</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#pricing-->
+
+    <section class="testimonial-area" id="testimonial">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Testimonial</h2>
+                <p class="text-center wow fadeInDown">开发者的话</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>这里是填充文字</blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.arLxAzq9Ys8duI4rHjHM1gHaNK?w=115&h=180&c=7&r=0&o=5&pid=1.7" alt="client">
+                            </div>
+                            <div class="col-xs-9 half-gutter">
+                                <h5>这里是填充文字</h5>
+                                <h6>这里是填充文字</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>这里是填充文字</blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.ClPC5nP1S_DCjAfhE3LUHwHaLH?w=115&h=180&c=7&r=0&o=5&pid=1.7" alt="client">
+                            </div>
+                            <div class="col-xs-9 half-gutter">
+                                <h5>这里是填充文字</h5>
+                                <h6>这里是填充文字</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-testimonial animate_fade_in" style="opacity: 1; right: 0px;">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <blockquote>这里是填充文字</blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-3">
+                                <img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.OT543_k5yZZe9LBdijEqqwHaLh?w=115&h=185&c=7&r=0&o=5&pid=1.7" alt="client">
+                            </div>
+                            <div class="col-xs-9 half-gutter">
+                                <h5>这里是填充文字</h5>
+                                <h6>这里是填充文字</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-us">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">联系我们</h2>
+                <p class="text-center wow fadeInDown">contact us</p>
+            </div>
+        </div>
+    </section>
+    <!--/#contact-us-->
+
+
+    <section id="contact">
+
+        <div class="container">
+            <div class="container contact-info">
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="contact-form">
+                            <h3>联系方式</h3>
+
+                            <address>
+                              <strong>这里是填充文字</strong><br>
+                              这里是填充文字<br>
+                              这里是填充文字<br>
+                              <abbr title="Phone"></abbr> 这里是填充文字
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 col-md-8">
+                        <div class="contact-form">
+
+                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <!--<div class="form-group">
+                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                </div>-->
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">发送</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#bottom-->
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 这里是填充文字 <br/>
+                    <a href="https://webthemez.com/free-bootstrap-templates/" target="_blank" title="Free Bootstrap Themes">这里是填充文字</a> By Twilight City
+                </div>
+                <div class="col-sm-6">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-github"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mousescroll.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom-scripts.js"></script>
 </body>
 
 </html>
